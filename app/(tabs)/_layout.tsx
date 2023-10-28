@@ -24,7 +24,7 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name="journal"
+        name="index"
         options={{
           title: "Journal",
           tabBarIcon: ({ color }) => <TabBarIcon name="pencil" color={color} />,
@@ -34,7 +34,9 @@ export default function TabLayout() {
         name="habit"
         options={{
           title: "Habits",
-          tabBarIcon: ({ color }) => <TabBarIcon name="bullseye" color={color} />,
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="bullseye" color={color} />
+          ),
         }}
       />
       <Tabs.Screen
